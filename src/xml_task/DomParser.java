@@ -1,4 +1,4 @@
-package xml;
+package xml_task;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -18,7 +18,7 @@ public class DomParser {
 	public static void domParser(){
 	try
     {
-        File xmlFile = new File("task.xml");
+        File xmlFile = new File("src/task.xml");
         DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
         DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();
         Document document = documentBuilder.parse(xmlFile);

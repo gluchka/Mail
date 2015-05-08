@@ -1,28 +1,28 @@
 {
 "trips":[
 {
-  "trip": 1,
+  "trip": "1",
   "type": "day-off",
   "country": "UK",
-  "days-night": 7
+  "days-night": "7"
 },
 {
-  "trip": 2,
+  "trip": "2",
   "type": "excursion",
   "country": "Spain",
-  "days-night": 5
+  "days-night": "5"
 },
 {
-  "trip": 3,
+  "trip": "3",
   "type": "rest",
   "country": "Turkey",
-  "days-night": 7
+  "days-night": "7"
 },
 {
-  "trip": 4,
+  "trip": "4",
   "type": "pilgrimage",
   "country": "Africa",
-  "days-night": 5
+  "days-night": "5"
 }
 ]
 }

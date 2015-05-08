@@ -1,9 +1,9 @@
-package xml;
+package xml_task;
 
 public class Factory {
 	
 		public enum TypeParser {
-			DOM,JDOM, SAX, JSON
+			DOM,JDOM, SAX, JSON, JAXB,XLS
 		}
 		
 		public static void chooseParser(String typeParser) {
@@ -17,7 +17,11 @@ public class Factory {
 			SaxParser.saxParser();
 		case JSON:
 			JsonParser.jsonParser();
-			
+		case JAXB:
+			JaxbParser.jaxbParser();
+		case XLS:
+			XLParser.getFullTable();
 		}
+		
 		}
 }

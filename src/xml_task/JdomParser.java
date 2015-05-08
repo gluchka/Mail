@@ -1,4 +1,4 @@
-package xml;
+package xml_task;
 
 import java.io.File;
 import java.io.IOException;
@@ -14,7 +14,7 @@ public class JdomParser {
 	public static void jdomParser() {
 
 		SAXBuilder parser = new SAXBuilder();
-		File fr = new File("task.xml");
+		File fr = new File("src/task.xml");
 
 		try {
 			Tourism tour;

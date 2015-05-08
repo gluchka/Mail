@@ -1,4 +1,4 @@
-package xml;
+package xml_task;
 
 import java.util.ArrayList;
 
@@ -13,11 +13,6 @@ import org.xml.sax.helpers.DefaultHandler;
 public class SaxParser {
 
 	static ArrayList<Tourism> dList = new ArrayList<Tourism>();
-
-	// public static void main(String[] args) {
-	// SaxLection ss = new SaxLection();
-	// ss.saxParser();
-	// }
 
 	public static void saxParser() {
 
@@ -87,7 +82,7 @@ public class SaxParser {
 				}
 			};
 
-			saxParser.parse("task.xml", defaultHandler);
+			saxParser.parse("src/task.xml", defaultHandler);
 		} catch (Exception ex) {
 			System.out.println(ex.getLocalizedMessage());
 			ex.printStackTrace();

@@ -1,12 +1,12 @@
 package dao;
 
-public class PlanetsDAO extends Entity {
+public class Planets extends Entity  {
 	
     /**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	//	private int idPlanet;
+		private int idPlanet;
 	private String name;
 	private int radius;
 	private int temperature;
@@ -14,11 +14,11 @@ public class PlanetsDAO extends Entity {
 	private String existence;
 	private int idGal;
 
-	public PlanetsDAO(){}
-	public PlanetsDAO( String name, int radius, int temperature,
+	public Planets(){}
+	public Planets(int id ,String name, int radius, int temperature,
 			String atmosphere, String existence, int idGal) {
-		super();
-//		setIdPlanet(idPlanet);
+//		super();
+		setIdPlanet(id);
 		setName(name);
 		setRadius(radius);
 		setTemperature(temperature);
@@ -28,13 +28,13 @@ public class PlanetsDAO extends Entity {
 
 	}
 
-//	public int getIdPlanet() {
-//		return idPlanet;
-//	}
-//
-//	public void setIdPlanet(int idPlanet) {
-//		this.idPlanet = idPlanet;
-//	}
+	public int getIdPlanet() {
+		return idPlanet;
+	}
+
+	public void setIdPlanet(int idPlanet) {
+		this.idPlanet = idPlanet;
+	}
 
 	public String getName() {
 		return name;
@@ -85,9 +85,10 @@ public class PlanetsDAO extends Entity {
 	}
 	@Override
 	public String toString() {
-	return	"idPlanet  " + super.getId()+ "  name " +name+"  radius  "+radius+"  temperature  "+temperature+"atmosphere"+atmosphere+"existence"+existence+"idGal"+idGal;
+	return	"idPlanet  " + idPlanet+ "  name " +name+"  radius  "+radius+"  temperature  "+temperature+"atmosphere"+atmosphere+"existence"+existence+"idGal"+idGal;
 		
 	}
+	
 
 	
 }

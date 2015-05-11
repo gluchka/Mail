@@ -3,8 +3,6 @@ package dao;
 import java.io.Serializable;
 
 public class Entity implements Cloneable, Serializable {
-	
-	
 	/**
 	 * 
 	 */

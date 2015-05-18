@@ -1,13 +1,11 @@
-package dao;
-
+package parsers.jdbc;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
 
-
-public class ConnectorDB {
+public class Connector {
 	public static Connection getConnection() throws SQLException{
 		ResourceBundle resource= ResourceBundle.getBundle("database");
 		String url= resource.getString("db.url");
@@ -15,7 +13,4 @@ public class ConnectorDB {
 		String pass=resource.getString("db.password");
 		return DriverManager.getConnection(url,user,pass);
 	}
-
 }
-
-
